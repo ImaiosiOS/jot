@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "jot",
-            path: "jot"
+            path: "jot",
+            publicHeadersPath: "include"
         )
     ]
 )

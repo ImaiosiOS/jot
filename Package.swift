@@ -11,15 +11,9 @@ let package = Package(
             targets: ["jot"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/SnapKit/Masonry.git", branch: "master")
-    ],
     targets: [
         .target(
             name: "jot",
-            dependencies: [
-                .product(name: "Masonry", package: "Masonry")
-            ],
             path: "jot",
             publicHeadersPath: "include"
         )
